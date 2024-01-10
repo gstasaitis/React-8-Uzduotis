@@ -1,0 +1,126 @@
+
+div .navBar{
+  background: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+}
+
+div .header { 
+  padding: 5px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div .landing h3 {
+  color: #2388ce;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+
+nav { 
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #103e62;
+  font-size: 14px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #2388ce;
+  font-weight: bold;
+}
+nav a.active {
+  color: #2388ce;
+  font-weight: bold;
+}
+
+
+
+button.getStarted {
+  font-size: 12px;
+  padding: 5px 15px;
+  color: white;
+  background: #2388ce;
+  border: none;
+  border-radius: 3px;
+  transition: .3s;
+}
+button.getStarted:hover {
+  cursor: pointer;
+  background: #0361a4;
+}
+
+section {
+  color: #103e62;
+}
+
+div .hero{
+  color: #103e62;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 50px;
+}
+
+div .hero h1{
+  font-size: 40px;
+}
+
+div .hero p{
+  padding: 20px;
+  font-weight: 600;
+}
+
+div .hero button{
+  padding: 10px 20px;
+}
+
+/* MEDIA 768 */
+@media (max-width: 768px){
+  div .navBar {
+    margin: auto;
+    width: 150%;
+  }
+  
+  div .header { 
+    width: 50%;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  div .hero {
+    width: 150%;
+  }
+
+  /* div .options {
+  width: 150%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  }
+
+  div .option {
+    margin: 0px 10px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  } */
+}
